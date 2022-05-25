@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 50%;
+  margin: auto;
+}
+
+.section--1 {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  padding-top: 10rem;
+}
+
+.main-info {
+  padding: 0;
+  margin: 0;
+  padding-right: 15rem;
+}
+
+.info h1 {
+  padding-top: 4rem;
+  font-size: 5rem;
+  color: #ca9498;
+  font-weight: 200;
+  display: block;
+  max-width: 25rem;
+  line-height: 5rem;
+  letter-spacing: 0.5rem;
+}
+
+.info span {
+  color: black;
+  font-weight: 400;
+}
+
+.disclaimer {
+  color: #ca9498;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.main-image img {
+  text-align: center;
+  height: 700px;
+  margin: auto;
+  padding-top: 10rem;
+}
+
+form {
+  padding-top: 1.8rem;
+  display: flex;
+}
+
+.mail {
+  border-radius: 25px;
+  font-family: inherit;
+  font-size: 14px;
+  width: 80%;
+  height: 2.5rem;
+  outline: none;
+}
+
+input:placeholder-shown {
+  border-color: gray;
+  padding: 5px;
+}
+
+.send {
+  margin-left: -30px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  width: 18%;
+  height: 2.5rem;
+  cursor: pointer;
+  border-style: none;
+}
+
+.send:hover {
+  background: linear-gradient(135deg, hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  color: hsl(0, 93%, 68%);
+}
+
+.image2 {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  .section--1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .main-info {
+    padding: 0;
+  }
+
+  .main-info form {
+    justify-content: center;
+    padding-top: 2.5rem;
+  }
+
+  .title h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: -20px;
+  }
+
+  .disclaimer p {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    display: block;
+    max-width: 100%;
+    max-height: 1080px;
+  }
+
+  .main-image {
+    margin-top: -5.2rem;
+  }
+
+  .logo {
+    position: absolute;
+    top: -9.5rem;
+    left: 0;
+  }
+
+  form {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    align-self: center;
+  }
+}
